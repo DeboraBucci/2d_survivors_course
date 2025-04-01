@@ -19,4 +19,3 @@ func acquire_target():
 		var player = player_nodes[0] as Node2D
 		
 		target_position = player.global_position
-

@@ -15,8 +15,7 @@ func _process(delta):
 	velocity = direction * MAX_SPEED
 	
 	move_and_slide()
-	
-	
+
 
 func get_movement_vector():
 	var x_movement = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
