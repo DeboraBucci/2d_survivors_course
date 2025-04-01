@@ -22,3 +22,42 @@ position = Vector2(382, 243)
 
 [node name="BasicEnemy2" parent="." instance=ExtResource("4_rbpok")]
 position = Vector2(251, 575)
+
+[node name="BasicEnemy3" parent="." instance=ExtResource("4_rbpok")]
+position = Vector2(131, 576)
+
+[node name="BasicEnemy4" parent="." instance=ExtResource("4_rbpok")]
+position = Vector2(257, 486)
+
+[node name="BasicEnemy5" parent="." instance=ExtResource("4_rbpok")]
+position = Vector2(407, 458)
+
+[node name="BasicEnemy6" parent="." instance=ExtResource("4_rbpok")]
+position = Vector2(555, 388)
+
+[node name="BasicEnemy7" parent="." instance=ExtResource("4_rbpok")]
+position = Vector2(585, 270)
+
+[node name="BasicEnemy8" parent="." instance=ExtResource("4_rbpok")]
+position = Vector2(559, 164)
+
+[node name="BasicEnemy9" parent="." instance=ExtResource("4_rbpok")]
+position = Vector2(237, 294)
+
+[node name="BasicEnemy10" parent="." instance=ExtResource("4_rbpok")]
+position = Vector2(85, 336)
+
+[node name="BasicEnemy11" parent="." instance=ExtResource("4_rbpok")]
+position = Vector2(117, 274)
+
+[node name="BasicEnemy12" parent="." instance=ExtResource("4_rbpok")]
+position = Vector2(179, 330)
+
+[node name="BasicEnemy13" parent="." instance=ExtResource("4_rbpok")]
+position = Vector2(247, 366)
+
+[node name="BasicEnemy14" parent="." instance=ExtResource("4_rbpok")]
+position = Vector2(311, 416)
+
+[node name="BasicEnemy15" parent="." instance=ExtResource("4_rbpok")]
+position = Vector2(353, 370)
