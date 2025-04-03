@@ -5,7 +5,8 @@
 [ext_resource type="Resource" uid="uid://d3uyvglg18byu" path="res://resources/upgrades/sword_rate.tres" id="3_odk14"]
 [ext_resource type="PackedScene" uid="uid://b7waa20741fgm" path="res://scenes/ui/upgrade_screen.tscn" id="4_odk14"]
 
-[node name="UpgradeManager" type="Node"]
+[node name="UpgradeManager" type="Node" node_paths=PackedStringArray("experience_manager")]
 script = ExtResource("1_pfuvr")
 upgrade_pool = Array[ExtResource("2_5fq6c")]([ExtResource("3_odk14")])
-upgrade_screne_scene = ExtResource("4_odk14")
+experience_manager = NodePath("")
+upgrade_screen_scene = ExtResource("4_odk14")
