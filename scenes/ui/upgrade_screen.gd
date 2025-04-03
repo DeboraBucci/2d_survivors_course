@@ -7,7 +7,7 @@ signal upgrade_selected(upgrade: AbilityUpgrade)
 
 
 func _ready():
-	get_tree().paused = false
+	get_tree().paused = true
 
 
 func set_ability_upgrades(upgrades: Array[AbilityUpgrade]):
