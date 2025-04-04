@@ -1,16 +1,20 @@
-[gd_scene load_steps=10 format=3 uid="uid://bpiiu6xaihtyt"]
+[gd_scene load_steps=12 format=3 uid="uid://bpiiu6xaihtyt"]
 
 [ext_resource type="PackedScene" uid="uid://dvcmdq11b5dyr" path="res://scenes/ui/arena_time_ui.tscn" id="1_6q06x"]
+[ext_resource type="Script" uid="uid://c35k2pg4ny5e4" path="res://scenes/main/main.gd" id="1_a8run"]
 [ext_resource type="PackedScene" uid="uid://cwexliegecd3y" path="res://scenes/manager/enemy_manager.tscn" id="1_l3cfh"]
 [ext_resource type="PackedScene" uid="uid://c0j5w6hpctyyk" path="res://scenes/manager/arena_time_manager.tscn" id="1_ow5a4"]
 [ext_resource type="TileSet" uid="uid://8jn6oechchv3" path="res://resources/tileset.tres" id="1_ueyym"]
 [ext_resource type="PackedScene" uid="uid://bxj0sqnm0d4yi" path="res://scenes/game_object/player/player.tscn" id="1_ybeap"]
+[ext_resource type="PackedScene" uid="uid://ck6vimfu8fdgh" path="res://scenes/ui/end_screen.tscn" id="2_ouso4"]
 [ext_resource type="PackedScene" uid="uid://bjasvm55ocnbo" path="res://scenes/game_camera/game_camera.tscn" id="3_66qq3"]
 [ext_resource type="PackedScene" uid="uid://m67gjtip8e0l" path="res://scenes/manager/experience_manager.tscn" id="3_yyfjg"]
 [ext_resource type="PackedScene" uid="uid://coc3c2gffpus6" path="res://scenes/manager/upgrade_manager.tscn" id="4_b1x3f"]
 [ext_resource type="PackedScene" uid="uid://ls1m8cclpdwy" path="res://scenes/ui/experience_bar.tscn" id="5_yyfjg"]
 
 [node name="Main" type="Node"]
+script = ExtResource("1_a8run")
+end_screen_scene = ExtResource("2_ouso4")
 
 [node name="ArenaTimeUI" parent="." node_paths=PackedStringArray("arena_time_manager") instance=ExtResource("1_6q06x")]
 arena_time_manager = NodePath("../ArenaTimeManager")
@@ -38,7 +42,8 @@ layer_0/tile_data = PackedInt32Array(3276870, 0, 4, 3211334, 65536, 4, 3145798, 
 [node name="Entities" type="Node2D" parent="." groups=["entities_layer"]]
 y_sort_enabled = true
 
-[node name="CharacterBody2D" parent="Entities" instance=ExtResource("1_ybeap")]
-position = Vector2(557, 397)
+[node name="Player" parent="Entities" instance=ExtResource("1_ybeap")]
+unique_name_in_owner = true
+position = Vector2(570, 440)
 
 [node name="Foreground" type="Node2D" parent="." groups=["foreground_layer"]]
