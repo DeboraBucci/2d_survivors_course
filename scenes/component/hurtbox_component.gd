@@ -8,7 +8,6 @@ func _ready():
 
 
 func on_area_entered(other_area: Area2D):
-	
 	if not other_area is HitboxComponent:
 		return
 	
